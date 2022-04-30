@@ -14,7 +14,7 @@ function Header(props){
         null
 
     return(
-        <div className='bg-neutral-800 pt-2 rounded-b-md w-full font-Josefin'>
+        <div className='relative mx-auto bg-neutral-800 pt-2 rounded-b-md w-full font-Josefin'>
             
             <h1 className='text-3xl tracking-widest text-white' 
                 onClick={() => props.siteSelector('LandingPage')}

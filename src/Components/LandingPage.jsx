@@ -10,11 +10,11 @@ import blog from '../Graphics/blog.jpeg';
 function LandingPage(props){
 
     return(
-        <div className='container bg-white box-border w-full pt-6 pb-12 font-Josefin'>
+        <div className='container relative mx-auto bg-white box-border w-full pt-6 pb-12 font-Josefin'>
             
             <div className='flex flex-row gap-10'>
 
-                <div className='container content-center box-border rounded-md h-96 w-2/3 p-40 mt-4 hover:grayscale' 
+                <div className='container bg-contain content-center box-border rounded-md h-96 w-2/3 p-40 mt-4 hover:grayscale' 
                     onClick={() => props.siteSelector('PhotographyPage')}
                     style={{backgroundImage: `url(${photography})`}}
                 >
@@ -24,7 +24,7 @@ function LandingPage(props){
                         Photography
                     </p>
                 </div>
-                <div className='container content-center box-border rounded-md h-96 w-2/3 p-40 mt-4  hover:sepia'  
+                <div className='container bg-contain content-center box-border rounded-md h-96 w-2/3 p-40 mt-4  hover:sepia'  
                     onClick={() => props.siteSelector('MusicPage')}
                     style={{backgroundImage: `url(${music})`}}
                 >
@@ -37,7 +37,7 @@ function LandingPage(props){
 
             <div className='flex flex-row gap-10'>
 
-                <div className='container content-center box-border rounded-md h-96 w-2/3 p-40 mt-4  hover:sepia'
+                <div className='container bg-contain content-center box-border rounded-md h-96 w-2/3 p-40 mt-4  hover:sepia'
                     onClick={() => props.siteSelector('BlogPage')}
                     style={{backgroundImage: `url(${blog})`}}
                 >
@@ -46,7 +46,7 @@ function LandingPage(props){
                     </p>
                 </div>
                 
-                <div className='container content-center box-border rounded-md h-96 w-2/3 p-40 mt-4  hover:sepia'
+                <div className='container bg-cover content-center box-border rounded-md h-96 w-2/3 p-40 mt-4  hover:sepia'
                     onClick={() => props.siteSelector('AboutPage')}
                     style={{backgroundImage: `url(${kleiner_schatz})`}}
                 >
